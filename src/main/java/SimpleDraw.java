@@ -21,6 +21,7 @@ public class SimpleDraw {
         g2d.drawString(text,-textWidth/2,0);
         g2d.dispose();
         JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(new JLabel(new ImageIcon(image)));
         frame.pack();
         frame.setLocationRelativeTo(null);
